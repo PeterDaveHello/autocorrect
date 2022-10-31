@@ -11,4 +11,5 @@ members = [
   "autocorrect-node",
   "autocorrect-rb/ext/autocorrect",
   "autocorrect-java",
+  "autocorrect-swift",
 ]
