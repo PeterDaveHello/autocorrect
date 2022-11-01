@@ -1,0 +1,20 @@
+namespace AutoCorrect {
+  string format(string text);
+  string format_for(string text, string filepath);
+  LintResult lint_for(string text, string filepath);
+};
+
+dictionary LintResult {
+  string raw;
+  string filepath;
+  sequence<LineResult> lines;
+  string error;
+};
+
+dictionary LineResult {
+  string old;
+  string new;
+  u64 line;
+  u64 col;
+  u8 severity;
+};

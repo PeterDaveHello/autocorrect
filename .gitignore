@@ -17,3 +17,4 @@ Cargo.lock
 **/*.rs.bk
 this-will.git-ignore.rs
 *.log
+*.zip

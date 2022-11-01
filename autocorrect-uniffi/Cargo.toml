@@ -1,0 +1,16 @@
+[package]
+edition = "2021"
+name = "autocorrect-uniffi"
+version = "2.4.3"
+
+[lib]
+crate-type = ["staticlib"]
+name = "autocorrect"
+
+[dependencies]
+autocorrect = {path = "../autocorrect"}
+uniffi = {version = "0.21.0", features = ["builtin-bindgen"]}
+uniffi_macros = {version = "0.21.0", features = ["builtin-bindgen"]}
+
+[build-dependencies]
+uniffi_build = "0.8"
